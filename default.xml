@@ -1731,5 +1731,5 @@
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
-  <include name="redroid.xml" />
+  <!-- <include name="redroid.xml" /> -->
 </manifest>
