@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <project path="vendor/redroid_ext" name="LineageOS_vendor_redroid_ext" remote="me-shiki"
+        upstream="redroid-lineage-19.1"
+        dest-branch="redroid-lineage-19.1" groups="pdk-cw-fs,pdk-fs" />
+</manifest>
