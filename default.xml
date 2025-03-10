@@ -1727,9 +1727,9 @@
   <project path="tools/trebuchet" name="platform/tools/trebuchet"
     groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" remote="aosp" />
 
-  <include name="lineage.xml" />
+  <include name="snippets/lineage.xml" />
+  <include name="snippets/redroid.xml" />
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
-  <!-- <include name="redroid.xml" /> -->
 </manifest>
