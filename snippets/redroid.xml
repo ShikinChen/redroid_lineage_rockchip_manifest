@@ -1,9 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+    <remote name="redroid" fetch="https://github.com/remote-android/" revision="redroid-12.0.0" />
+    <remote name="redroid-rockchip" fetch="https://github.com/redroid-rockchip/"
+        revision="redroid-12.0.0" />
+
     <project name="LineageOS_device_redroid" path="device/redroid" remote="me-shiki"
         upstream="redroid-lineage-19.1"
         dest-branch="redroid-lineage-19.1"
         groups="pdk-cw-fs,pdk-fs" />
+
+
+    <remove-project name="platform/external/selinux" />
+    <project path="external/selinux" name="redroid_lineage_rockchip_external_selinux"
+        groups="redroid,aosp,pdk" remote="me-shiki" />
+
+    <remove-project name="platform/external/minijail" />
+    <project path="external/minijail" name="redroid_lineage_rockchip_external_minijail"
+        groups="redroid,aosp,pdk" remote="me-shiki" />
+
+    <remove-project name="LineageOS/android_frameworks_av" />
+    <project path="frameworks/av" name="redroid_lineage_rockchip_frameworks_av"
+        groups="redroid,aosp,pdk" remote="me-shiki" />
+
+    <remove-project name="LineageOS/android_frameworks_native" />
+    <project path="frameworks/native" name="redroid_lineage_rockchip_frameworks_native"
+        groups="redroid,aosp,pdk" remote="me-shiki" />
+
+    <remove-project name="platform/system/bpf" />
+    <project path="system/bpf" name="redroid_lineage_rockchip_system_bpf"
+        groups="redroid,aosp,pdk" remote="me-shiki" />
+
+    <remove-project name="LineageOS/android_system_core" />
+    <project path="system/core" name="redroid_lineage_rockchip_system_core"
+        groups="redroid,aosp,pdk" remote="me-shiki" />
+
+
+    <remove-project name="platform/system/libhwbinder" />
+    <project path="system/libhwbinder" name="redroid_lineage_rockchip_system_libhwbinder"
+        groups="redroid,aosp,pdk" remote="me-shiki" />
+
+
+    <remove-project name="platform/system/libvintf" />
+    <project path="system/libvintf" name="redroid_lineage_rockchip_system_libvintf"
+        groups="redroid,aosp,pdk" remote="me-shiki" />
+
+    <remove-project name="LineageOS/android_system_netd" />
+    <project path="system/netd" name="redroid_lineage_rockchip_system_netd"
+        groups="redroid,aosp,pdk" remote="me-shiki" />
+
+    <remove-project name="LineageOS/android_system_vold" />
+    <project path="system/vold" name="redroid_lineage_rockchip_system_vold"
+        groups="redroid,aosp,pdk" remote="me-shiki" />
+
+
+    <project path="device/redroid-prebuilts" name="device_redroid-prebuilts" groups="redroid"
+        remote="redroid" revision="master" clone-depth="1" />
+    <project path="hardware/redroid/c2" name="redroid-c2" groups="redroid" remote="redroid"
+        revision="master" />
+    <project path="hardware/redroid/omx" name="redroid-omx" groups="redroid" remote="redroid"
+        revision="master" />
+    <project path="vendor/redroid" name="vendor_redroid" groups="redroid" remote="redroid"
+        revision="master" />
 
     <include name="snippets/redroid_ext.xml" />
 </manifest>
