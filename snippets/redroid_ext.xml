@@ -4,6 +4,10 @@
         upstream="redroid-lineage-19.1"
         dest-branch="redroid-lineage-19.1" groups="pdk-cw-fs,pdk-fs" />
 
+    <remove-project name="LineageOS/android_hardware_interfaces" />
+    <project path="hardware/interfaces" name="aosp_hardware_interfaces" groups="redroid"
+        remote="redroid-rockchip" clone-depth="1" />
+
     <remove-project name="redroid-omx" />
     <project path="hardware/redroid/omx" name="redroid-omx" groups="redroid"
         remote="redroid-rockchip" revision="master" />
