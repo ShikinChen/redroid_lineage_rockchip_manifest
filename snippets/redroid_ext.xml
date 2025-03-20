@@ -8,6 +8,10 @@
     <project path="hardware/interfaces" name="aosp_hardware_interfaces" groups="redroid"
         remote="redroid-rockchip" clone-depth="1" /> -->
 
+    <remove-project name="vendor_redroid" />
+    <project path="vendor/redroid" name="vendor_redroid" groups="redroid" remote="redroid-rockchip"
+        revision="master" />
+
     <remove-project name="redroid-omx" />
     <project path="hardware/redroid/omx" name="redroid-omx" groups="redroid"
         remote="redroid-rockchip" revision="master" />
