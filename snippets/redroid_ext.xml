@@ -4,9 +4,5 @@
         upstream="redroid-lineage-19.1"
         dest-branch="redroid-lineage-19.1" groups="pdk-cw-fs,pdk-fs" />
 
-    <remove-project name="vendor_redroid" />
-    <project path="vendor/redroid" name="vendor_redroid" groups="redroid" remote="redroid-rockchip"
-        revision="master" />
-
     <include name="snippets/rockchip.xml" />
 </manifest>
