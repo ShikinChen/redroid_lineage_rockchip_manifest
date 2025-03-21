@@ -55,8 +55,8 @@
 
     <project path="hardware/redroid/omx" name="redroid_lineage_rockchip_redroid-omx"
         groups="redroid" remote="me-shiki" />
-    <project path="vendor/redroid" name="redroid_lineage_rockchip_vendor_redroid" groups="redroid"
-        remote="me-shiki"
+    <project path="vendor/redroid" name="redroid_lineage_rockchip_vendor_redroid"
+        groups="redroid" remote="me-shiki"
     />
 
     <project path="device/redroid-prebuilts" name="device_redroid-prebuilts" groups="redroid"
